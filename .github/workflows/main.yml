@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Test"
-      - run: ./gradlew bootRun
+      - run: (cd ../.. ; ./gradlew build)
