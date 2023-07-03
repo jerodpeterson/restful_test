@@ -4,7 +4,11 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - run: echo "Test"
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
       - run: ./gradlew build
       
