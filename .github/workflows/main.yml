@@ -5,4 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Test"
-      - run: (cd ../.. ; ./gradlew build)
+      - run: pwd
+      - run: ls
